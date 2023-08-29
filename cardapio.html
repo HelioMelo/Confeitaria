@@ -1,0 +1,174 @@
+<style>
+  body {
+  
+  background-color:pink
+
+}
+
+#cardapio-bemvindo {
+  padding-left: 0; /* Remover o espaçamento interno à esquerda */
+}
+#cardapio-bemvindo .banner {
+  height: 200px; /* Altura de 500px */
+  background-image: url('../img/image.png');
+  background-position: center; /* Posição centralizada */
+  background-size: cover; /* Redimensionar para cobrir */
+
+  
+  
+}
+  
+ 
+.cardapio-bemvindo-content {
+  padding-left: 50px; /* Espaçamento interno à esquerda de 50px */
+}
+#cardapio-bemvindo h1 {
+  margin-top: 70px; /* Margem superior de 70px */
+}
+#cardapio-bemvindo::after, #cardapio-sobre::after {
+  content: ""; /* Conteúdo vazio */
+  display: block; /* Exibição em bloco */
+  clear: both; /* Limpar floats */
+  margin-bottom: 100px; /* Margem inferior de 100px */
+  
+}
+.cardapio-descricao p {
+  line-height: 2; /* Altura da linha de 2 */
+  font-size: 16px; /* Tamanho da fonte de 16 pixels */
+  margin-bottom: 30px; /* Margem inferior de 30px */
+  margin-left: 25px; /* Margem à esquerda de 25px */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cardapio-descricao h1 {
+  line-height: 1; /* Altura da linha de 1 */
+  font-size: 16px; /* Tamanho da fonte de 16 pixels */
+  margin-bottom: 30px; /* Margem inferior de 30px */
+  margin-left: 25px; /* Margem à esquerda de 25px */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cardapio-minibanner {
+  width: 300px; /* Largura de 300px */
+  height: 400px; /* Altura de 400px */
+  background-image: url('../img/docinho1.jpg'); /* Imagem de plano de fundo */
+  background-position: center; /* Posição centralizada */
+  background-size: cover; /* Redimensionar para cobrir */
+  float: left; /* Flutuar à esquerda */
+}
+.cardapio-descricao {
+  position: absolute; /* Posição absoluta */
+  left: 370px; /* Distância à esquerda de 370px */
+  padding-right: 30px; /* Espaçamento interno à direita de 30px */
+}
+
+.cardapio-descricao p {
+  line-height: 2; /* Altura da linha de 2 */
+  font-size: 16px; /* Tamanho da fonte de 16 pixels */
+  margin-bottom: 30px; /* Margem inferior de 30px */
+  margin-left: 25px; /* Margem à esquerda de 25px */
+}
+
+#cardapio-sobre .cardapio-minibanner {
+  float: right; /* Flutuar à direita */
+  margin-right: 50px; /* Margem à direita de 50px */
+  background-image: url('img/taça.jpg'); /* Imagem de plano de fundo */
+  /* Resto dos estilos... */
+}
+
+#cardapio-sobre .sessao-descricao {
+  position: absolute; /* Posição absoluta */
+  left: 25px; /* Distância à esquerda de 25px */
+  width: calc(100% - 400px); /* Largura calculada com base no espaço restante */
+  /* Resto dos estilos... */
+}
+/* galeria */
+.banner-galeria {
+  background-position: center; /* Centraliza a imagem de plano de fundo */
+  background-size: cover; /* Redimensiona a imagem de plano de fundo para cobrir todo o elemento */
+  display: inline-block; /* Exibe o elemento como um bloco inline */
+  height: 200px; /* Define a altura do elemento */
+}
+
+
+
+
+
+/* Estilo para o botão "Voltar" */
+.btn-voltar {
+    display: inline-block; /* Define o elemento como um bloco em linha */
+    padding: 10px 20px; /* Define o preenchimento interno do botão */
+    background-color: #ff69b4; /* Define a cor de fundo do botão como #ff69b4 (rosa claro) */
+  margin-bottom: 30px; /* Margem inferior de 30px */
+  margin-left: 25px; /* Margem à esquerda de 25px */
+    color: #fff; /* Define a cor do texto do botão como branco */
+    text-decoration: none; /* Remove a decoração de link do botão */
+    border-radius: 5px; /* Define o raio de borda do botão como 5px */
+    transition: background-color 0.3s ease; /* Define uma transição suave de cor de fundo */
+}
+
+/* Estilo para o botão "Voltar" quando o mouse passar por cima */
+.btn-voltar:hover {
+    background-color: #e65c9d; /* Define a cor de fundo do botão como #e65c9d (rosa mais escuro) quando o mouse passa por cima */
+}
+</style>
+
+<body>
+ 
+  <div class="content">
+          
+          <main>
+            <section id="cardapio-bemvindo">
+              <div class="banner"></div>
+              <div class="cardapio-bemvindo-content">
+                <h1>Cardapio</h1>
+                <div class="cardapio-minibanner"> </div>
+                <div class="cardapio-descricao">
+ 
+      
+      <h1>
+        Cupcakes de segunda • R$ 6 cada</h1>
+        <p>Sabores incluídos: baunilha, red velvet, chocolate ralado, café e chá verde
+      </p>
+      
+     
+       <h1> Bolos • R$ 3 cada</h1>
+        <p> Sabores incluídos: red velvet, bolo de aniversário, abóbora apimentada, gergelim torrado e fusão de bagas
+      </p>
+                   </div>
+  </div>
+
+</section>
+      
+     <section id="cardapio-sobre">
+              <div class="cardapio-content">
+                
+                <div class="cardapio-minibanner"></div>
+                <div class="cardapio-descricao">
+                  <p>
+       <h1>Brownies de quinta • R$ 6 cada</h1>
+       <p> Sabores incluídos: mocha, café, chá verde, red velvet e chocolate supremo
+      </p>
+      
+      <h1> 
+        Fatias de bolo de sexta • R$ 9 cada</h1>
+         <p>
+        Sabores incluídos: baunilha, red velvet, chocolate ralado, café e chá verde
+      </p>
+      
+    
+       <h1> Donuts de terça • R$ 5 cada</h1>
+         <p> Sabores incluídos: chocolate, manteiga de amendoim,<br> delícia da Bavária, cheesecake de morango e chá verde
+      </p>
+                  </p>
+          
+                </div>
+            </section >
+      
+   
+          </main>
+<a class="btn-voltar" href="index.html">Voltar Site Principal</a>
+
+    
+</body>
+

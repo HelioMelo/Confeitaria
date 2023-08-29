@@ -1,0 +1,283 @@
+html{
+ font-family: 'Open Sans', 'sans-serif';
+  color: #373a3c;
+}
+
+ a{
+   transition: .5s; /* quando acessa ele tem um tempo de volta a aria de 5s*/
+ }
+
+/* sidebar menu lateral */
+#sidebar {
+  position: fixed; /* Posição fixa no lado esquerdo */
+  height: 100%; /* Altura total do lado esquerdo */
+  width: 300px; /* Largura da barra */
+  background-color: #d963c4; /* Cor de fundo da barra */
+  padding-top: 40px; /* Espaçamento superior */
+}
+/* estilo da letra */
+#sidebar h1 {
+  color: #fff; /* Cor do texto */
+  font-size: 32px; /* Tamanho da fonte */
+  text-align: center; /* Alinhamento centralizado */
+  margin-top: 20px; /* Margem superior de 20px */
+  margin-bottom: 30px; /* Margem inferior de 30px */
+}
+
+#sidebar a {
+  color: #fff; /* Cor do texto */
+  text-decoration: none; /* Remover decoração de link */
+  font-size: 20px; /* Tamanho da fonte */
+}
+
+#sidebar a:hover {
+  color: #f4ef5e; /* Cor do texto quando o mouse estiver sobre o link */
+}
+
+#sidebar li {
+  padding: 15px; /* Espaçamento interno */
+}
+
+#sidebar-container {
+  position: relative; /* Posição relativa */
+  margin-left: auto; /* Margem à esquerda automática */
+  margin-right: auto; /* Margem à direita automática */
+  width: 200px; /* Largura de 200px */
+}
+
+.logo-doceria {
+  width: 150px; /* Largura de 60px */
+  height: 150px; /* Altura de 60px */
+  display: block; /* Exibição em bloco */
+  position: relative; /* Posição relativa */
+  margin-left: auto; /* Margem à esquerda automática */
+  margin-right: auto; /* Margem à direita automática */
+}
+/* termina aqui o codigo em css do sidebar */
+/* corpo do site */
+.content {
+  position: absolute; /* Posição absoluta */
+  left: 300px; /* Posicionamento à esquerda de 300px */
+  width: calc(100% - 300px); /* Largura calculada */
+}
+
+.content h1,
+.content h2 {
+  color: #006599; /* Cor do texto */
+  margin-bottom: 30px; /* Margem inferior de 30px */
+}
+.content h1 {
+  font-size: 48px; /* Tamanho da fonte de 48 pixels */
+}
+.content h2 {
+  font-size: 35px; /* Tamanho da fonte de 35 pixels */
+}
+
+section {
+  padding-left: 50px; /* Espaçamento interno à esquerda de 50px */
+}
+/* Bem vindo */
+#sessao-bemvindo {
+  padding-left: 0; /* Remover o espaçamento interno à esquerda */
+}
+.sessao-bemvindo-content {
+  padding-left: 50px; /* Espaçamento interno à esquerda de 50px */
+}
+
+#sessao-bemvindo .banner {
+  height: 500px; /* Altura de 500px */
+  background-image: url('../img/banner2.jpg'); /* Imagem de plano de fundo */
+  background-position: center; /* Posição centralizada */
+  background-size: cover; /* Redimensionar para cobrir */
+}
+#sessao-bemvindo h1 {
+  margin-top: 70px; /* Margem superior de 70px */
+}
+
+#sessao-bemvindo::after, #sessao-sobre::after {
+  content: ""; /* Conteúdo vazio */
+  display: block; /* Exibição em bloco */
+  clear: both; /* Limpar floats */
+  margin-bottom: 100px; /* Margem inferior de 100px */
+}
+
+.sessao-minibanner {
+  width: 300px; /* Largura de 300px */
+  height: 400px; /* Altura de 400px */
+  background-image: url('../img/banner3.jpg'); /* Imagem de plano de fundo */
+  background-position: center; /* Posição centralizada */
+  background-size: cover; /* Redimensionar para cobrir */
+  float: left; /* Flutuar à esquerda */
+}
+
+.sessao-descricao {
+  position: absolute; /* Posição absoluta */
+  left: 370px; /* Distância à esquerda de 370px */
+  padding-right: 30px; /* Espaçamento interno à direita de 30px */
+}
+
+.sessao-descricao p {
+  line-height: 2; /* Altura da linha de 2 */
+  font-size: 16px; /* Tamanho da fonte de 16 pixels */
+  margin-bottom: 30px; /* Margem inferior de 30px */
+  margin-left: 25px; /* Margem à esquerda de 25px */
+}
+
+.sessao-bemvindo-btn, form input[type=submit] {
+  background-color: #006599; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  text-decoration: none; /* Sem decoração de texto */
+  padding: 20px 40px; /* Espaçamento interno de 20px superior/inferior e 40px à esquerda/direita */
+  transition: 0.5s; /* Transição de 0.5s */
+  display: block; /* Exibição em bloco */
+  text-align: center; /* Alinhamento centralizado */
+  border: none; /* Sem borda */
+  cursor: pointer; /* Cursor de ponteiro */
+  margin-left: 25px;
+  font-size: 15px; /* Define o tamanho da fonte como 15px */
+  width: 80px; /* Define a largura como 180px */
+  
+}
+.sessao-bemvindo-btn:hover, form input[type="submit"]:hover {
+  background-color: #2790c6;
+}
+
+/* Sessao sobre */
+#sessao-sobre .sessao-minibanner {
+  float: right; /* Flutuar à direita */
+  margin-right: 50px; /* Margem à direita de 50px */
+  background-image: url('img/banner4.jpg'); /* Imagem de plano de fundo */
+  /* Resto dos estilos... */
+}
+
+#sessao-sobre .sessao-descricao {
+  position: absolute; /* Posição absoluta */
+  left: 25px; /* Distância à esquerda de 25px */
+  width: calc(100% - 400px); /* Largura calculada com base no espaço restante */
+  /* Resto dos estilos... */
+}
+/* galeria */
+.banner-galeria {
+  background-position: center; /* Centraliza a imagem de plano de fundo */
+  background-size: cover; /* Redimensiona a imagem de plano de fundo para cobrir todo o elemento */
+  display: inline-block; /* Exibe o elemento como um bloco inline */
+  height: 200px; /* Define a altura do elemento */
+}
+
+/* Estilos para as sessões de doces */
+#sessao-doces1, #sessao-doces2, #sessao-doces3 {
+  padding-right: 50px; /* Espaçamento à direita de 50 pixels */
+  margin-bottom: 50px; /* Espaçamento inferior de 50 pixels */
+}
+/* Estilos para as imagens da .doces1-imgs */
+.doces1-imgs {
+  width: 18.8%; /* Largura das imagens como 18.8% do elemento pai */
+  margin: .5%; /* Espaçamento em todas as direções */
+  margin-right: .5%; /* Espaçamento à direita */
+}
+#img1 {
+  background-image: url('../img/galeria1.jpg'); /* Define a imagem de plano de fundo para a imagem 1 */
+  margin-left: 0; /* Define a margem esquerda como 0 */
+}
+#img2 {
+  background-image: url('../img/galeria2.jpg'); /* Define a imagem de plano de fundo para a imagem 2 */
+}
+#img3 {
+  background-image: url('../img/galeria3.jpg'); /* Define a imagem de plano de fundo para a imagem 3 */
+}
+#img4 {
+  background-image: url('../img/galeria4.jpg'); /* Define a imagem de plano de fundo para a imagem 4 */
+}
+#img5 {
+  background-image: url('../img/galeria5.jpg'); /* Define a imagem de plano de fundo para a imagem 5 */
+  margin-right: 0; /* Define a margem direita como 0 */
+}
+
+.doces2-imgs {
+  width: 32.3%; /* Define a largura das imagens como 32.3% do elemento pai */
+  margin: 0.5%; /* Define uma margem de 0.5% em todos os lados das imagens */
+  margin-right: 0.5%; /* Define uma margem direita de 0.5% nas imagens */
+}
+#img6 {
+  background-image: url('../img/galeria6.jpg');
+  margin-left: 0;
+}
+#img7 {
+  background-image: url('../img/galeria7.jpg');
+}
+#img8 {
+  background-image: url('../img/galeria8.jpg');
+  margin-right: 0;
+}
+
+
+.doces3-imgs {
+  width: 23.9%; /* Define a largura das imagens como 23.9% do elemento pai */
+  margin: 0.5%; /* Define uma margem de 0.5% em todos os lados das imagens */
+  margin-right: 0.5%; /* Define uma margem direita de 0.5% nas imagens */
+}
+#img9 {
+  background-image: url('../img/galeria9.jpg');
+  margin-left: 0;
+}
+#img10 {
+  background-image: url('../img/galeria10.jpg');
+}
+#img11 {
+  background-image: url('../img/galeria11.jpg');
+
+}
+#img12 {
+  background-image: url('../img/galeria12.jpg');
+  margin-right: 0;
+}
+/* Estilos para a seção de contato */
+
+#form-contato {
+  width: 500px; /* Define a largura do formulário de contato como 500px */
+}
+
+#form-contato input[type="text"],
+#form-contato input[type="email"],
+#form-contato textarea {
+  display: block; /* Define os elementos de entrada como blocos, para que ocupem a largura total */
+  border: 1px solid #006599; /* Define uma borda de 1px sólida com a cor #006599 */
+  padding: 10px; /* Define um preenchimento interno de 10px */
+  margin-bottom: 20px; /* Define uma margem inferior de 20px */
+  width: 100%; /* Define a largura como 100% */
+  font-size: 16px; /* Define o tamanho da fonte como 16px */
+  font-family: 'Open sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Define a família da fonte */
+}
+
+#form-contato input[type="text"]:focus,
+#form-contato input[type="email"]:focus,
+#form-contato textarea:focus {
+  border-color: #2790c6; /* Define a cor da borda ao receber foco */
+}
+
+#form-contato textarea {
+  height: 150px; /* Define a altura da área de texto como 150px */
+}
+
+#form-contato ::placeholder {
+  color: #2790c6; /* Define a cor do texto de placeholder */
+}
+
+#form-contato input[type="submit"] {
+  margin-left: 0; /* Define a margem esquerda como 0 */
+  font-size: 15px; /* Define o tamanho da fonte como 15px */
+  width: 180px; /* Define a largura como 180px */
+}
+
+/* Estilos para o rodapé */
+
+footer {
+  height: 100px; /* Define a altura do rodapé como 100px */
+  padding-top: 150px; /* Define um preenchimento superior de 150px */
+  color: #006599; /* Define a cor do texto como #006599 */
+}
+
+footer p {
+  text-align: center; /* Centraliza o texto */
+  font-weight: bold; /* Define a fonte em negrito */
+}
